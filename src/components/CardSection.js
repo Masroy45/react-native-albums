@@ -1,0 +1,26 @@
+import React from 'react';
+import { View } from 'react-native';
+
+const CardSection = (porps) => {
+    const { containerStyle } = Styles;
+
+    return (
+        <View style={containerStyle}>
+            {porps.children}
+        </View>
+    )
+}
+
+const Styles = {
+    containerStyle : {
+        borderBottomWidth : 1,
+        padding : 5,
+        backgroundColor : '#fff',
+        justifyContent : 'flex-start',
+        flexDirection : 'row',
+        borderColor : '#ddd',
+        position : 'relative'
+    }
+}
+
+export default CardSection;
